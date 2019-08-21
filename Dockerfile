@@ -34,9 +34,10 @@ RUN \
   && \
   # Install Spacy language models \
   python3 -m spacy download en \
-  \
+  && python3 -m spacy download pt \
+  && \
   # Cleanup
-  && apk del build-deps \
+  apk del build-deps \
   && rm -rf ${TMP_DIR} /var/cache/apk/* /root/.pip
 
 CMD ["/usr/local/bin/luigid"]
