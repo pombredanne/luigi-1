@@ -5,6 +5,7 @@ jsonschema==2.6.0
 luigi==2.8.2
 numpy==1.16.2
 pandas==0.23.4
+prometheus-client==0.7.1
 psycopg2-binary==2.7.6.1
 py4j==0.10.7
 pyspark==2.4.0
